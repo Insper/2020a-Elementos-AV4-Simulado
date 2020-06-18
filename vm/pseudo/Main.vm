@@ -1,0 +1,38 @@
+// ---------------------------------  
+// Rafael Corsi @ insper . edu . br
+//              2020a
+// ---------------------------------
+//
+// Descritivo: 
+//  Escreva um código em VM que realize a seguinte
+//  operação :
+//
+//  if( temp[0] > 4 && temp[1] >= 4 ):
+//      temp[2] = 3
+//  else:
+//      temp[2] = -1   
+//
+//  Onde:
+//   - temp[0]: temporário 0
+//   - temp[1]: ...
+// 
+//  ****************************************************
+//  ** A ideia é deixar o Z01 resolver, você não deve **
+//  ** simplificar a equação                          **
+//  ****************************************************
+// ---------------------------------
+
+function Main.main 0
+
+
+
+
+
+
+
+
+
+
+
+label while2
+    goto while2
