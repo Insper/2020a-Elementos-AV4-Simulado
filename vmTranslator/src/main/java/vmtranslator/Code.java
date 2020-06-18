@@ -67,6 +67,21 @@ public class Code {
 
         } else if (command.equals("or")) {
             commands.add(String.format("; %d - OR", lineCode++));
+            commands.add( "leaw $SP,%A" );
+            commands.add( "movw (%A),%D" );
+            commands.add( "decw %D" );
+            commands.add( "movw %D,(%A)" );
+
+            commands.add( "movw (%A),%A" );
+            commands.add( "movw (%A),%D");
+
+            commands.add( "leaw $SP,%A" );
+            commands.add( "subw (%A),$1,%A" );
+
+            commands.add( "orw (%A),%D,%D" );
+
+            commands.add( "movw %D,(%A)" );
+
 
         } else if (command.equals("not")) {
 
@@ -124,6 +139,18 @@ public class Code {
             } else if (segment.equals("local")) {
 
             } else if (segment.equals("argument")) {
+                commands.add( "leaw $"+String.valueOf(index)+",%A" );
+                commands.add( "movw %A,%D" );
+                commands.add( "leaw $ARG,%A");
+                commands.add( "addw (%A),%D,%A" );
+                commands.add( "movw (%A),%D" );
+                commands.add( "leaw $SP,%A" );
+                commands.add( "movw (%A),%A" );
+                commands.add( "movw %D,(%A)" );
+                commands.add( "leaw $SP,%A" );
+                commands.add( "movw (%A),%D" );
+                commands.add( "incw %D" );
+                commands.add( "movw %D,(%A)" );
 
             } else if (segment.equals("this")) {
 

@@ -38,11 +38,10 @@ Questões:
 - Arquivo: `nasm/pseudo.nasm`
 - Teste: `./testeAssembly.py`
 
-| Teste | O que testa     | pts |
-|-------|-----------------|-----|
-| 1     | SW(1..0) = "01" |     |
-| 1     | SW(1..0) = "00" |     |
-| 1     | SW(1..0) = "10" |     |
+| Teste | O que testa | pts |
+|-------|-------------|-----|
+| 1     | if          |     |
+| 2     | else        |     |
 
 Transcreva para assembly do Z01 o pseudo código a seguir:
 

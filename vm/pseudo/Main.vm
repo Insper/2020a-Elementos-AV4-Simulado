@@ -24,7 +24,27 @@
 
 function Main.main 0
 
+push temp 0
+push constant 5
+lt
+if-goto else
 
+push temp 1
+push constant 4
+lt
+if-goto else
+
+push constant 3
+pop temp 2
+goto end
+
+label else
+
+push constant 1
+neg
+pop temp 2
+
+label end
 
 
 
